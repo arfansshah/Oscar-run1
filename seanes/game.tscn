@@ -231,6 +231,8 @@ position = Vector2(-343, 0)
 position = Vector2(-1, -7)
 scale = Vector2(676.6881, 0.3042694)
 zoom = Vector2(4, 4)
+limit_bottom = 122
+limit_smoothed = true
 position_smoothing_enabled = true
 
 [node name="platform" parent="." instance=ExtResource("3_6y7co")]
