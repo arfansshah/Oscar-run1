@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Oscar Run"
-run/main_scene="uid://irfde4ohrari"
+run/main_scene="uid://d3uavxhasmdn5"
 config/features=PackedStringArray("4.5", "Forward Plus")
 
 [audio]

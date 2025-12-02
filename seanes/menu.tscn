@@ -1,0 +1,72 @@
+[gd_scene load_steps=7 format=3 uid="uid://d3uavxhasmdn5"]
+
+[ext_resource type="Script" uid="uid://nmm0kd2tsow4" path="res://scripts/menu.gd" id="1_lb24x"]
+[ext_resource type="FontFile" uid="uid://cs0xjjgwwh8md" path="res://assests/fonts/PixelOperator8-Bold.ttf" id="2_cbro6"]
+[ext_resource type="Texture2D" uid="uid://pset8mclk63t" path="res://assests/sprites/pixel-art-mystical-background_52683-87349.png" id="2_v6r0q"]
+[ext_resource type="Texture2D" uid="uid://bswk17ksj0rr0" path="res://assests/sprites/download (1).jpeg" id="3_kbafm"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v6r0q"]
+texture = ExtResource("3_kbafm")
+region_rect = Rect2(24, 92, 176, 39)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tlc0k"]
+texture = ExtResource("3_kbafm")
+region_rect = Rect2(24, 146, 177, 39)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 341.0
+offset_top = 112.0
+offset_right = 1535.0
+offset_bottom = 776.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lb24x")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.328
+anchor_bottom = 0.53300005
+offset_right = -269.00604
+offset_bottom = -199.29608
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -390.0
+offset_top = -142.0
+offset_right = 830.0
+offset_bottom = 511.0
+texture = ExtResource("2_v6r0q")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = -126.0
+offset_top = 62.0
+offset_right = -36.0
+offset_bottom = 127.0
+scale = Vector2(8.18, 4.69)
+theme_override_constants/separation = 17
+alignment = 1
+
+[node name="Play" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.15908344, 0.22781008, 1)
+theme_override_fonts/font = ExtResource("2_cbro6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_v6r0q")
+text = "Play"
+autowrap_trim_flags = 192
+
+[node name="Quit" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.5019608, 0.09803922, 0.54509807, 1)
+theme_override_fonts/font = ExtResource("2_cbro6")
+theme_override_font_sizes/font_size = 16
+theme_override_styles/normal = SubResource("StyleBoxTexture_tlc0k")
+text = "Quit"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]
