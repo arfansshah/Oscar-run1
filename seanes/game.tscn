@@ -343,10 +343,10 @@ text = "Space to Jump
 Arrow keys to move"
 
 [node name="Label2" type="Label" parent="Labels"]
-offset_left = -131.0
-offset_top = -12.0
-offset_right = -11.0
-offset_bottom = 7.0
+offset_left = -113.0
+offset_top = 51.0
+offset_right = 7.0
+offset_bottom = 70.0
 theme_override_fonts/font = ExtResource("7_jju1g")
 theme_override_font_sizes/font_size = 8
 text = "Falling hurts...."

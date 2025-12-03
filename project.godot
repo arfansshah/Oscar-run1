@@ -26,6 +26,10 @@ Music="*res://seanes/music.tscn"
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 
+[global_group]
+
+Player=""
+
 [input]
 
 jump={

@@ -44,10 +44,10 @@ texture = ExtResource("2_v6r0q")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 0
-offset_left = -126.0
-offset_top = 62.0
-offset_right = -36.0
-offset_bottom = 127.0
+offset_left = -79.999985
+offset_top = 54.999996
+offset_right = 0.6846161
+offset_bottom = 120.63966
 scale = Vector2(8.18, 4.69)
 theme_override_constants/separation = 17
 alignment = 1
