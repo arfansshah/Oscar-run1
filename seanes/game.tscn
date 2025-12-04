@@ -10,7 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://uhlvc5p0gkem" path="res://seanes/slime.tscn" id="6_8s7v0"]
 [ext_resource type="FontFile" uid="uid://cmeseel8wwfe6" path="res://assests/fonts/PixelOperator8.ttf" id="7_jju1g"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6y7co"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_680cb"]
 texture = ExtResource("2_2xixg")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -183,7 +183,7 @@ texture = ExtResource("2_2xixg")
 
 [sub_resource type="TileSet" id="TileSet_ll4m0"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_6y7co")
+sources/0 = SubResource("TileSetAtlasSource_680cb")
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_8s7v0"]
 distance = 6.0
